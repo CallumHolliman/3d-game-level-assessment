@@ -5,20 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class DeathMenu : MonoBehaviour
 {
-    public void Start() {
+    private void Start() {
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
     }
 
-    public void MainMenuButton() {
+    private void MainMenuButton() {
         SceneManager.LoadScene("Menu");
     }
 
-    public void QuitButton() {
+    private void QuitButton() {
         Application.Quit();
     }
 
-    public void RestartButton() {
+    private void RestartButton() {
         SceneManager.LoadScene("Main");
     }
 }

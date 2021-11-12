@@ -4,27 +4,27 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
-    public void PlayButton() {
+    private void PlayButton() {
         SceneManager.LoadScene("Main");
     }
 
-    public void QuitButton() {
+    private void QuitButton() {
         Application.Quit();
     }
 
-    public void QualityLow() {
+    private void QualityLow() {
         QualitySettings.SetQualityLevel(0);
     }
 
-    public void QualityMedium() {
+    private void QualityMedium() {
         QualitySettings.SetQualityLevel(2);
     }
 
-    public void QualityHigh() {
+    private void QualityHigh() {
         QualitySettings.SetQualityLevel(4);
     }
 
-    public void FullscreenToggle() {
+    private void FullscreenToggle() {
         Screen.fullScreen = !Screen.fullScreen;
     }
 }

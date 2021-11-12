@@ -12,7 +12,7 @@ public class RaiseDoor : MonoBehaviour
 
 
 
-    private void OnTriggerExit(Collider other) {
+    private void OnTriggerExit(Collider other) {    //leaving trigger causes ball to fall from the air
         if (other.CompareTag("Player")) {
             Football.useGravity = true;
         }
